@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './header.module.css'
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import Link from 'next/link'
 
 const Navbarr = () => {
+
+
   return (
     <nav className={styles.navbar}>
     <div>

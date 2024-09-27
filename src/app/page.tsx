@@ -1,5 +1,6 @@
 import React from 'react'
 const page = () => {
+  console.log('this ispage')
   return (
     <div>
         <h1>welcom</h1>
