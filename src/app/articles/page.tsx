@@ -4,6 +4,9 @@ import ItemArticles from '../../components/articles/itemarticle'
 import { Articles } from '@/utils/articles';
 const Articlepage = async() => {
   const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+  if(!response.ok){
+    throw new Error('Failed to fetch ')
+  }
   const articles : Articles[]= await response.json()
   console.log(articles);
   
